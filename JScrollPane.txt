@@ -16,6 +16,7 @@ public class ScrollEx {
 	JSCrollPane js=new JScrollPane(jp);
 	f.add(js);
 	f.setSize(300,400);
+	f.setVisible(true);
 	f.setDefaultCLoseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	public  static void main(String[] args)
