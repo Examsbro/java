@@ -1,7 +1,7 @@
 import javax.swing.*;
 public class JTableEx {
     JFrame f;
-    Week12c()
+    JTableEx()
     {
         f=new JFrame();
         String data[][]={{"501","ravi","50000"},
