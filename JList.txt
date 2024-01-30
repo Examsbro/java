@@ -3,7 +3,7 @@ public class JListEx {
     public JListEx()
     {
         JFrame f=new JFrame();
-        DefaultListModel l1=new DefaultListModel<>();
+        DefaultListModel l1=new DefaultListModel();
         l1.addElement("Item1");
         l1.addElement("Item2");
         l1.addElement("Item3");
