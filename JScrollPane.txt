@@ -1,4 +1,4 @@
-import java.awt.FlowLayout;
+import java.awt.*;
 import javax.swing.*;
 public class ScrollEx {
         JFrame f;
