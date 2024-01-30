@@ -1,0 +1,25 @@
+import java.awt.FlowLayout;
+import javax.swing.*;
+public class ScrollEx {
+        JFrame f;
+	ScrollEx()
+	{
+	f=new JFrame();
+        JPanel jp=new JPanel();
+	jp.setLayout(new GridLayout(20,20);
+	for(int i=0;i<20;i++)
+	{
+	for(int j=0;j<20;j++)
+	{
+	jp.add(new JButton("Button"+j));
+    	}
+	JSCrollPane js=new JScrollPane(jp);
+	f.add(js);
+	f.setSize(300,400);
+	f.setDefaultCLoseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public  static void main(String[] args)
+	{
+	new ScrollEx();
+        }
+}

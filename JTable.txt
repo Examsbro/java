@@ -1,0 +1,25 @@
+import javax.swing.*;
+public class JTableEx {
+    JFrame f;
+    Week12c()
+    {
+        f=new JFrame();
+        String data[][]={{"501","ravi","50000"},
+                          {"502","raju","70000"},
+                          {"503","ramu","90000"}};
+        String column[]={"ID","NAME","SALARY"};
+        JTable t=new JTable(data,column);
+        JScrollPane s=new JScrollPane(jt);
+        f.add(s);
+        f.setSize(300,400);
+	f.setTitle("JTable class");
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+    public static void main(String[] args) {
+        JTableEx t=new JTableEx();
+        
+    }
+        
+    }
+                     

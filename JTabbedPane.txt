@@ -1,0 +1,42 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package srudeep;
+
+/**
+ *
+ * @author student
+ */
+import javax.swing.*;
+public class JTabbedPaneEx {
+    JFrame f;
+    JTabbedPaneEx(){
+        f=new JFrame();
+	JPanel main=new JPanel();
+	JPanel view=new JPanel();
+	JPanel help=new JPanel();
+	JButton b1=new JButton("main");
+	JButton b2=new JButton("view");
+	JButton b3=new JButton("help");
+	main.add(b1);
+	view.add(b2);
+	help.add(b3);
+        JTabbedPane t=new JTabbedPane();
+        t.setBounds(200,200,200,200);
+        t.add("Main",main);
+        t.add("View",view);
+        t.add("Help",help);
+        f.add(t);
+        f.setSize(300,300);
+	f.setTitle("JTabbedPane class");
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+    }
+    public static void main(String[] args){
+        JTabbedPaneEx t=new  JTabbedPaneEx();
+    }
+}

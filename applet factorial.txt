@@ -1,0 +1,48 @@
+import java.applet.*;
+import java.awt.*;
+import java.awt.event.*;
+public class FactorialEx extends Applet implements ActionListener
+{
+Button b1,b2;
+Label l1,l2;
+TextField t1,t2;
+public void init()
+{
+    l1=new Label("NUMBER");
+    t1=new TextField(20);
+    l2=new Label("RESULT");
+    t2=new TextField(20);
+    b1=new Button("COMPUTER");
+    b2=new Button("CLEAR");
+    add(l1);
+    add(tf1);
+    add(l2);
+    add(tf2);
+    add(b1);
+    add(b2);
+    b1.addActionListener(this);
+    b2.addActionListener(this);
+}
+public void actionPerformed(ActionEvent e)
+{
+    if(a.getSource()==b1)
+    {
+	String s=t1.getText();
+        long c=Long.parseLong(s);
+        for(int i=1;i<=a;i++)
+            fact=fact*i;
+        t2.setText(""+fact);
+    }
+    else
+    {
+        t1.setText("");
+        t2.setText("");
+      
+    }
+}
+}
+
+
+
+
+    

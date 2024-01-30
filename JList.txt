@@ -1,0 +1,24 @@
+import javax.swing.*;
+public class JListEx {
+    public JListEx()
+    {
+        JFrame f=new JFrame();
+        DefaultListModel l1=new DefaultListModel<>();
+        l1.addElement("Item1");
+        l1.addElement("Item2");
+        l1.addElement("Item3");
+        l1.addElement("Item4");
+        JList list=new JList<>(l1);
+        list.setBounds(100,100,75,75);
+        f.add(list);
+        f.setSize(300,300);
+	f.setTitle("JList class");
+        f.setLayout(null);
+        f.setVisible(true);
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         }
+    public static void main(String[] args) {
+        JListEx j=new JListEx();
+    }
+    
+}
