@@ -35,21 +35,21 @@ public class MouseEvent extends Applet implements MouseListener,MouseMotionListe
      {
          mousex=me.getX();
          mouseY=me.getY();
-         msg="Down";
+         msg="Pressed";
          repaint();
      }
      public void mouseReleased(MouseEvent me)
      {
          mousex=me.getX();
          mouseY=me.getY();
-         msg="Up";
+         msg="Released";
          repaint();    
      }
      public void mouseDragged(MouseEvent me)
      {
          mousex=me.getX();
          mouseY=me.getY();
-         msg="*";
+         msg="Dragged";
          showStatus("Dragging mouse at "+mousex +","+mouseY);
          repaint(); 
      }
