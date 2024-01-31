@@ -4,14 +4,16 @@ public class KeyLIstenerEx extends Frame implements KeyListener {
     Label l;
     TextArea t;
     KeyLIstenerEx(){
-        t=new TextArea();
-        t.setBounds(20,80,300,300);
-	add(t);
-        t.addKeyListener(this);
-    	setSize(300,300);
-	setTitle("KeyListener program");
-    	setLayout(null);
-    	setVisible(true);
+        l=new Label();
+        l.setBounds(20,50,100,20);
+        area=new TextArea();
+        area.setBounds(20,80,300,300);
+        area.addKeyListener(this);
+        add(l);
+        add(area);
+        setSize(400,400);
+        setLayout(null);
+        setVisible(true);;
     }
     public void keyPressed(KeyEvent e){
         l.setText("Key Pressed");
