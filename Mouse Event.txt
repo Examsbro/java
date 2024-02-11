@@ -54,13 +54,13 @@ public class MouseEvent extends Applet implements MouseListener,MouseMotionListe
          repaint(); 
      }
      public void mouseMoved(MouseEvent me)
-{
- showStatus("Moving mouse at "+me.getX()+","+me.getY());  
-}   
-        public void paint(Graphics g)
-        {
-            g.drawString(msg,mousex, mouseY);
-        }        
+    {
+         showStatus("Moving mouse at "+me.getX()+","+me.getY());  
+    }   
+    public void paint(Graphics g)
+    {
+        g.drawString(msg,mousex, mouseY);
+    }        
 }
 
 
